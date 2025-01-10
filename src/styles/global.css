@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "Figtree";
+    src: url("../assets/fonts/Figtree-VariableFont_wght.ttf");
+    font-weight: 100 900;
+    font-stretch: 50% 150%;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: "Figtree";
+    text-align: left;
+}

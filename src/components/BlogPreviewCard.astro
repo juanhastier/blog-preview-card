@@ -1,0 +1,110 @@
+---
+import ImageAvatar from "../assets/images/image-avatar.webp";
+---
+
+<div id="container">
+    <header></header>
+    <main>
+        <a href="#">Learning</a>
+        <span class="date">Published 21 Dec 2023</span>
+        <h1>HTML y CSS foundations</h1>
+        <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
+    </main>
+    <footer>
+        <img class="avatar" src={ImageAvatar.src} alt="Image avatar de Greg Hooper">
+        <span class="name">Greg Hooper</span>
+    </footer>
+</div>
+
+<style>
+	#container {
+        width: 327px;
+        padding: 24px;
+        border-radius: 20px;
+        border: 1px solid #111111;
+        box-shadow: 8px 8px #000000;
+        background-color: #ffffff;
+    }
+
+    header {
+        width: 100%;
+        height: 200px;
+        border-radius: 10px;
+        background-image: url("../assets/images/illustration-article.svg");
+        background-position: -29px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    header,
+    main {
+        margin-bottom: 24px;
+    }
+
+    a {
+        padding: 4px 12px;
+        border-radius: 4px;
+        font-size: clamp(12px, 2.8vw, 14px);
+        font-weight: 800;
+        text-decoration: none;
+        background-color: #f4d04e;
+        display: inline-block;
+    }
+
+    .date {
+        font-size: clamp(12px, 2.8vw, 14px);
+        font-weight: 500;
+        display: block;
+    }
+
+    h1 {
+        font-size: clamp(20px, 4.6vw, 24px);
+        font-weight: 800;
+    }
+
+    a, .date, h1 {
+        margin-bottom: 12px;
+        color: #111111;
+        line-height: 1.5;
+    }
+
+    h1:hover {
+        color: #f4d04e;
+        cursor: pointer;
+    }
+
+    p {
+        font-size: clamp(14px, 3.2vw, 16px);
+        font-weight: 500;
+        line-height: 1.5;
+        color: #6b6b6b;
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+    }
+
+    .avatar {
+        width: 32px;
+        margin-right: 12px;
+    }
+
+    .name {
+        font-size: 14px;
+        font-weight: 800;
+        line-height: 1.5;
+        color: #111111;
+    }
+
+    @media screen and (min-width: 481px) {
+        #container {
+            width: 100%;
+            max-width: 384px;
+        }
+
+        header {
+            background-position: 0;
+        }
+    }
+</style>
